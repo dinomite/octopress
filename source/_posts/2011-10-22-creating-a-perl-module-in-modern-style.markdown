@@ -13,16 +13,17 @@ Whereas [ExtUtils::MakeMaker](https://metacpan.org/module/ExtUtils::MakeMaker) a
 
 To start using Dist::Zilla, install it using the standard CPAN shell command (`cpan -i Dist::Zilla`) or with cpanminus (`cpanm Dist::Zilla`).  You utilize Dist::Zilla through the command `dzil`; if that's not in your path (`which dzil`), then you'll want to find it and symlink it somewhere useful or add it to your path.  Global setup of dzil is done by invoking `dzil setup` and answering the questions it poses.  With that done you can very easily mint a new distribution:
 
-<pre class="brush: perl">
+```perl
 Titus:~/sandbox$ dzil new Number::Cruncher
 [DZ] making target dir /Users/dinomite/Dropbox/sandbox/Number-Cruncher
 [DZ] writing files to /Users/dinomite/Dropbox/sandbox/Number-Cruncher
 [DZ] dist minted in ./Number-Cruncher
-</pre>
+```
 
 In the newly created Number-Cruncher directory you'll find a `lib` directory containing `Number/Cruncher.pm` and a `dist.ini`
 :
-<pre class="brush: perl">
+
+```perl
 name    = Number-Cruncher
 author  = Drew Stephens [drew@dinomite.net]
 license = Perl_5
@@ -32,11 +33,11 @@ copyright_year   = 2011
 version = 0.001
 
 [@Basic]
-</pre>
+```
 
 At this point, code and tests are the only things needed to have a Perl module.  Here's some simple code for `lib/Number/Cruncher.pm`:
 
-<pre class="brush: perl">
+```perl
 use strict;
 use warnings;
 package Number::Cruncher;
@@ -63,11 +64,11 @@ sub crunch {
 }
 
 1;
-</pre>
+```
 
 And the associated test file that I created, `t/number-cruncher.t`:
 
-<pre class="brush: perl">
+```perl
 #!/usr/bin/env perl
 use strict;
 use warnings;
@@ -80,11 +81,11 @@ my $first = 1;
 my $second = 7;
 my $cruncher = Number::Cruncher->new($first, $second);
 ok (($first + $second) == $cruncher->crunch());
-</pre>
+```
 
 In three files--`dist.ini`, `lib/Number/Cruncher.pm`, and `t/number-cruncher.t`--we have a module.  Run the test with `dzil test` and you'll see Dist::Zilla build your module into a temporary directory and run the test suite from there:
 
-<pre class="brush: shell">
+```sh
 Titus:~/sandbox/Number-Cruncher$ dzil test
 [DZ] building test distribution under .build/mgJsQhkFi6
 [DZ] beginning to build Number-Cruncher
@@ -102,11 +103,11 @@ All tests successful.
 Files=1, Tests=2,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.02 cusr  0.00 csys =  0.05 CPU)
 Result: PASS
 [DZ] all's well; removing .build/mgJsQhkFi6
-</pre>
+```
 
 To build a distributable tarball, just run `dzil build`:
 
-<pre class="brush: shell">
+```sh
 Titus:~/sandbox/Number-Cruncher$ dzil build
 [DZ] beginning to build Number-Cruncher
 [DZ] guessing dist's main_module is lib/Number/Cruncher.pm
@@ -120,7 +121,7 @@ Number-Cruncher-0.001.tar.gz
 Number-Cruncher-0.001:
 LICENSE     META.yml    README      lib
 MANIFEST    Makefile.PL dist.ini    t
-</pre>
+```
 
 If you already have a PAUSE account, you can use `dzil release` to upload that tarball to PAUSE for inclusion in CPAN.  If you haven't authored a Perl module before, [request an account](http://pause.perl.org/pause/query?ACTION=request_id) for uploading modules to CPAN.  With PAUSE and Dist::Zilla, creating widely-available Perl modules is easy.
 
