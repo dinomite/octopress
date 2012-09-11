@@ -5,7 +5,7 @@ title: Learning About Nutrition
 mt_id: 273
 date: 2011-05-02 07:30:25 -07:00
 ---
-<a href="http://www.fitbomb.com/p/why-i-eat-paleo.html"><img alt="Go Paleo" src="http://dinomite.net/assets_c/2011/05/Go%20Paleo-thumb-500x500-2.jpg" width="400" height="400" class="mt-image-right" style="float: right; margin: 0 0 20px 20px;" /></a>
+[{% img right http://dinomite.net/images/posts/gopaleo.jpg 400 400 "Go Paleo" %}](http://www.fitbomb.com/p/why-i-eat-paleo.html)
 I have learned a *lot* about nutrition in the past few years, mainly fueled by my interest in fitness.  Once I got beyond run-of-the-mill [Globo Gym](http://rehobothcrossfit.com/2010/08/19/globo-gym-vs-crossfit-gym/) workouts by delving into truly challenging fitness like [parkour](http://www.americanparkour.com) and [CrossFit](http://crossfit.com), it became apparent that I would need to match exercise with proper nutrition in order to excel.  Note: if you don't give a shit about what I've done and just want to learn about nutrition, <a href="#information">head to the bottom</a>.
 
 In The Beginning, There Was Parkour
