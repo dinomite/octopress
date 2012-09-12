@@ -28,7 +28,7 @@ those are sufficiently abrasive or splintery to extra mudweight you carry in
 gloves.  Focus on wearing as little clothing as possible—the first time you hit
 a mud pit your shirt & shorts carry a lot of it with you.
 
-Trainig is another big question that people have.  Mine is pretty much the same
+Training is another big question that people have.  Mine is pretty much the same
 as previously: I do CrossFit 2-3 times a week and 1-2 days a week of Olympic
 lifting.  In the 6 months prior to doing Tough Mudder I went on a couple of ~3.5
 mile runs.  The only other running I did was the occasional CrossFit WOD that
