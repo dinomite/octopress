@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Tough Mudder Mid-Atlantic 2013"
+title: "Tough Mudder Mid-Atlantic 2012"
 date: 2012-09-11 14:26
 comments: true
 categories: 
