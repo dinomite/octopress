@@ -10,7 +10,7 @@ categories:
 [{% img http://farm6.staticflickr.com/5471/11892424355_bd7c2bcc67_z.jpg 'Scout being Rowdy' %}](http://www.flickr.com/photos/dinomite/11892424355/)
 
 ## [Illusion Collar](http://www.cesarsway.com/shop/Illusion-Dog-Collar-Leash-System)
-My girlfriend had been watching a lot of [Caesar Millan](http://www.cesarsway.com/)) before we got our dog and we put a fair bit of stock in his methods.  Using a leash in the way that [Caesar describes](https://www.youtube.com/watch?v=vjub9dCBiv8), well up the dog's neck and close to the ears, allowed us to control Scout, but the leash wouldn't stay there, so we figured it was worth trying the oddly-named[^1] Illusion Collar to make this easier.
+My girlfriend had been watching a lot of [Caesar Millan](http://www.cesarsway.com/) before we got our dog and we put a fair bit of stock in his methods.  Using a leash in the way that [Caesar describes](https://www.youtube.com/watch?v=vjub9dCBiv8), well up the dog's neck and close to the ears, allowed us to control Scout, but the leash wouldn't stay there, so we figured it was worth trying the oddly-named[^1] Illusion Collar to make this easier.
 
 While the Illusion collar does what it's supposed to, keeping the operative part of the collar well up the dog's neck for better control, this did nothing for Scout and he remaiined unruly on walks.
 
