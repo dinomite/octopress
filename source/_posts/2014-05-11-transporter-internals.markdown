@@ -11,20 +11,21 @@ While I had the drive that was connected to the Transporter sitting idle, I figu
 
 The disk has four partitions: the first two are 1 GB each, the third is 2 GB, and the last is the remainder fo your disk.  Partition 1 is a pretty standard Linux affair:
 
-    .rnd         dev          installation lost+found   opt          root         tftpboot     var
-    bin          etc          lib          mnt          proc         sbin         tmp
-    boot         home         linuxrc      old-root     replicator   sys          usr
+    .rnd    etc/           linuxrc       opt/          sys/         var/
+    bin/    home/          lost+found/   proc/         tftpboot/
+    boot/   installation/  mnt/          replicator/   tmp/
+    dev/    lib/           old-root/     sbin/         usr/
 
 file(1) says that the second is "data", nothing more (even with the [--special-files](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man1/file.1.html) option); given its size, I'm guessing swap, despite not being metioned in the first partition's fstab.  The third partition is mounted as `/opt` and contains just a few directories:
 
-    core            log             lost+found      ntp             tmp             upgrade-manager
+    core/   log/   lost+found/   ntp/   tmp/   upgrade-manager/
 
 The `log` dir has logs for network interfaces (ifplugd, eth0-dhcp, wifi) and Samba.  The `ntp` dir just has a drift file, and the `upgrade-manager` has a logs, presumably about upgrades.
 
 Finally, the big partition is mounted as `/replicator` and contains the data you store, among other things:
 
-    configuration/ diskInfo.log   logs/          samba/         staging/       sys/
-    directories/   history/       lost+found/    shadowPools/   storagePools/  uuids/
+    configuration/ diskInfo.log  logs/          samba/         staging/       sys/
+    directories/   history/      lost+found/    shadowPools/   storagePools/  uuids/
 
 The `history` and `logs` directories are sizeable, tens of megabytes, with the former containing some metadata about syncing and the latter containg logs about syncing.  Both `shadowPools` and `storagePools` contain a directory that is a UUID where your data is stored.  `df` on my Mac doesn't tell me anything about the partition's capacity or usage (because it's mounted using [ext4fuse](https://github.com/gerard/ext4fuse) via [fuse4x](http://fuse4x.github.io/)), so I can't say for sure, but I figure some sort of hard link shenanigans is happening between those two directories.
 
